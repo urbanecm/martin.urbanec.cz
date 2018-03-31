@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Kontaktujte mě</title>
+    <style media="screen">
+      input, select, textarea {
+        display: block;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form method="post" action="contact.php">
+      <label for="name">Vaše jméno/Your name: </label>
+      <input id="name" type="text" name="name">
+      <label for="email">Váš e-mail/Your email:</label>
+      <input id="email" type="email" name="email">
+      <label for="capacity">Role</label>
+      <select name="capacity" id="capacity">
+        <option value="personal">Osobní/Personal</option>
+        <option value="wikimedian">Wikipedista/Wikipedian</option>
+        <option value="student">Student</option>
+      </select>
+      <label for="subject">Předmět/Subject</label>
+      <input type="text" name="subject" id="subject">
+      <label for="message">Vaše zpráva/Your message</label>
+      <textarea name="message" rows="8" cols="80"></textarea>
+
+      <input type="submit" value="Odeslat/Send">
+    </form>
+  </body>
+</html>
